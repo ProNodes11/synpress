@@ -1671,9 +1671,9 @@ const metamask = {
       }
 
       await setupSettings(enableAdvancedSettings, enableExperimentalSettings);
-      await module.exports.changeNetwork(network);
+      // await module.exports.changeNetwork(network);
 
-      walletAddress = await module.exports.getWalletAddress();
+      // walletAddress = await module.exports.getWalletAddress();
       await playwright.switchToCypressWindow();
       return true;
     } else if (
